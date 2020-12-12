@@ -11,58 +11,60 @@
 
     <div class="container">
   <header>
+    <div class="up-header">
       <div class="main-title">SuperSo2 Drop</div>
+      <a href="" class="gamburger-menu">
+        <img src="img/ren.png" alt="">
+      </a>
+    </div>
       <nav>
           <ul class="menu">
-              <li class="menu-item"><button href="" class="link-menu">Главная</button></li>
-              <li class="menu-item"><button href="" class="link-menu">Поддержка</button></li>
-              <li class="menu-item"><button href="" class="link-menu">Вывод </button></li>
-              <li class="menu-item"><button href="" class="link-menu">Инвентарь</button></li>
+              <li class="menu-item"><button href="" data-tooltip="mishaermakov298@gmail.com" class="link-menu">Поддержка</button></li>
+              <li class="menu-item"><a href="#limit"><button href="#limit" class="link-menu">Limited Edition</button></a></li>
               <li class="menu-item"><button href="" class="link-menu">Кейсы</button></li>
           </ul>
       </nav>
-      
-  </header> 
+  </header>
+
   <section class="slider">
   <div class="single-item">
     <div><img src="img/c2.png" alt="Оружие" class="weapon3"></div>
     <div><img src="img/c1.png" alt="Оружие" class="weapon2"></div>
     <div><img src="img/c3.png" alt="Оружие" class="weapon1"></div>
 </div>
-</section> 
+</section>
   <main>
-<section class="limit">
-<div class="title-section">Limited Edition(Fuck YOu)</div>
+<section id="limit" class="limit">
+<div class="title-section">Limited Edition <br>
+Ура! На все скины одинаковые цены, скупай быстрей!</div>
 <div class="all-cases">
     <div class="case">
         <div class="title-case1">Akr "Treasure Hunter"</div>
         <img src="img/akr.png" alt="case" class="img-case">
-        <button class="btn-case">Купить</button>
+        <button onclick="document.location='iner.html'" class="btn-case">Купить</button>
     </div>
     <div class="case">
         <div class="title-case2">Usp "Genesis"</div>
-        <img src="img/c4.png" alt="case" class="img-case"> 
-        <button class="btn-case">Купить
-        </button>   
+        <img src="img/c4.png" alt="case" class="img-case">
+        <button onclick="document.location='iner.html'" class="btn-case">Купить
+        </button>
     </div>
-</div>
-<div class="all-cases">
     <div class="case">
         <div class="title-case3">Awm "Sport V2"</div>
         <img src="img/c5.png" alt="case" class="img-case">
-        <button class="btn-case">Купить
+        <button onclick="document.location='iner.html'" class="btn-case">Купить
         </button>
     </div>
 
     <div class="case">
         <div class="title-case4">M4 "Samurai"</div>
         <img src="img/c6.png" alt="case" class="img-case">
-        <button class="btn-case">Купить
+        <button  class="btn-case">Купить
         </button>
     </div>
 </div>
 </section>
-<section class="things">
+<!-- <section class="things">
     <div class="title-section">Вещевые кейсы</div>
 
 </section>
@@ -73,7 +75,7 @@
 <section class="simple-case">
     <div class="title-section">Обычные кейсы</div>
 
-</section>
+</section> -->
 
 
 
@@ -91,7 +93,7 @@
       </div>
 
   </footer>
- 
+
 
 
 </div>
@@ -101,12 +103,14 @@
 
 
   <script>
-    
+
       $('.single-item').slick({
-        arrows: false
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 900
       });
-   
-    
+
+
   </script>
 
 <script src="js/three.r95.min.js"></script>
@@ -123,5 +127,6 @@ VANTA.WAVES({
   color: 0x252c31
 })
 </script>
+<script src="js/main.js"></script>
 </body>
 </html>
